@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Harp App for the Fuse website.",
   "dependencies": {
-    "harp": "0.11.x"
+    "harp": "0.12.x"
   },
   "engines": {
     "node": "0.10.x",
