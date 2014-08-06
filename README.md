@@ -9,7 +9,7 @@ A Harp App for the Fuse, SPC website.
  * View in your browser at `localhost:5000`
 
 ---
-Licensing
+## Licensing
 
  * Code is MIT
  * Logos, content, and branding are Copyright Fuse, SPC
