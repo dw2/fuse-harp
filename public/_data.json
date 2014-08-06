@@ -1,5 +1,26 @@
 {
     "index": {
-        "pageTitle": "Fuse - Coworking in the Tri-Cities, WA"
+        "pageTitle": "Coworking in the Tri-Cities, WA"
+    },
+    "about": {
+        "pageTitle": "About"
+    },
+    "membership": {
+        "pageTitle": "Membership"
+    },
+    "contact": {
+        "pageTitle": "Contact & Directions"
+    },
+    "coworking": {
+        "pageTitle": "What is Coworking?"
+    },
+    "fit": {
+        "pageTitle": "Is this for me?"
+    },
+    "privacy": {
+        "pageTitle": "Privacy Policy"
+    },
+    "terms": {
+        "pageTitle": "Terms of Use"
     }
 }

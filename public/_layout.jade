@@ -13,10 +13,9 @@ html
       nav
         a(href='/about') About
         a(href='/membership') Membership
-        a(href='/directions') Directions
-        a(href='/contact') contact
+        a(href='/contact') Contact &amp; Directions
 
-    article: .wrapper
+    article
       != yield
 
     footer: .wrapper
@@ -26,3 +25,9 @@ html
         | &copy; Copyright #{new Date().getFullYear()} Fuse, SPC
         a(href='/privacy') Privacy
         a(href='/terms') Terms
+
+    script(src='/js/jquery-2.1.1.min.js')
+    script(src='/js/app.js')
+    if !!scripts
+      for script in scripts
+        script(src='/js/'+script+'.js')
