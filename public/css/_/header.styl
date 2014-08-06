@@ -12,14 +12,21 @@ header
         left: 20px
         position: absolute
         top: 20px
+        z-index: 2
         img
             display: block
             height: 80px
             width: 257px
 
     nav
-        line-height: 60px
         position: absolute
+        z-index: 1
+        a
+            text-transform: uppercase
+
+@media screen and (min-width: 800px)
+    header nav
+        line-height: 60px
         right: 5px
         top: 30px
         a
@@ -27,8 +34,70 @@ header
             display: inline-block
             font-weight: 600
             padding: 0 15px
-            text-transform: uppercase
             vertical-align: center
             &:hover,
             &:focus
                 color: #0093b2
+
+@media screen and (max-width: 799px)
+    header nav
+        padding: 120px 0 0
+        left: 0
+        right: 0
+        top: 0
+        &:before
+            color: #1bc0e3
+            content: '\f0c9'
+            cursor: pointer
+            font-size: 60px
+            line-height: 120px
+            position: absolute
+            right: 0
+            text-align: center
+            top: 0
+            width: 90px
+        &:after
+            color: #1bc0e3
+            content: 'Menu'
+            cursor: pointer
+            font: 20px Dosis, sans-serif
+            -webkit-font-smoothing: auto
+            font-weight: 600
+            line-height: 120px
+            position: absolute
+            right: 90px
+            text-transform: uppercase
+            top: 0
+        a
+            background: #0e4e5c
+            border-bottom: 1px solid rgba(#000,.2)
+            color: #fff
+            padding: 0 20px
+            position: absolute
+            transition(padding .2s linear)
+            top: -999em
+            &:hover,
+            &:focus
+                color: #FFE35F
+    body.menuOpen
+        header
+            &:after
+                background: #303f42
+                background: rgba(#303f42,.7)
+                bottom: 0
+                content: ''
+                left: 0
+                position: fixed
+                right: 0
+                top: 120px
+            nav a
+                display: block
+                padding: 20px
+                position: static
+        article,
+        footer
+            filter(blur(2px))
+
+@media screen and (max-width: 479px)
+    header nav:after
+        display: none

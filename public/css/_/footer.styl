@@ -7,22 +7,36 @@ footer
     .branding
         display: block
         image_optimize()
-        left: 20px
         position: absolute
-        top: 20px
         img
             display: block
             height: 80px
             width: 257px
 
     .legal
-        position: absolute
-        right: 20px
         text-transform: uppercase
-        top: 30px
         a
             margin: 0 0 0 1em
             text-decoration: underline
             &:hover,
             &:focus
                 color: #FFE25F
+
+@media screen and (min-width: 800px)
+    footer
+        .branding
+            left: 20px
+            top: 20px
+        .legal
+            position: absolute
+            right: 20px
+            top: 30px
+
+@media screen and (max-width: 799px)
+    footer
+        .branding
+            left: 50%
+            margin-left: -128px
+            top: 60px
+        .legal
+            padding-top: 180px

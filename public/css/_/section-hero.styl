@@ -1,13 +1,10 @@
 section.hero
     background: 50% 50% no-repeat #E0F2F4
-    height: 240px
-    padding: 120px 20px
 
     h1
         font-weight: 400
     h2
         margin-top: .5em
-
 
     &.home01
         background-image: url('/images/home-hero-01.jpg')
@@ -29,3 +26,30 @@ section.hero
 @media screen and (min-width: 1600px)
     section.hero
         bg_size(cover)
+
+@media screen and (min-width: 800px)
+    section.hero
+        height: 240px
+        padding: 120px 20px
+
+@media screen and (max-width: 1199px)
+    section.hero br
+        display: none
+
+@media screen and (max-width: 799px)
+    section.hero
+        height: 360px
+        padding: 60px 20px
+
+@media screen and (max-width: 599px)
+    section.hero
+        font-size: .9em
+        &.home01 .btn
+            display: block
+            margin: 0 auto
+            ~ .btn
+                margin-top: .5em
+
+@media screen and (max-width: 479px)
+    section.hero
+        font-size: .8em
