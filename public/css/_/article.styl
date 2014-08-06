@@ -11,14 +11,16 @@ section
 
     h1, h2, h3, h4
         color: #0e4e5c
-        font-weight: 200
         line-height: 1em
     h1
         font-size: 3em
+        font-weight: 200
     h2
         font-size: 2em
+        font-weight: 200
     h3
         font-size: 1.5em
+        font-weight: 600
     h4
         font-weight: 600
 
@@ -27,11 +29,41 @@ section
 
     ul, ol
         li
-            margin-left: 3em
+            margin-left: 2em
     ul > li
         list-style: square
     ol > li
         list-style: decimal
+
+    dl
+        &:after
+            clear_fix()
+        dt,
+        dd
+            box_sizing(border-box)
+            float: left
+            margin: 1px 0
+            padding: 1em
+        dt
+            background: #bde2e9
+            color: #0e4e5c
+            clear: both
+            font-weight: 600
+            text-align: right
+            width: 30%
+        dd
+            background: #E4F5F8
+            text-align: left
+            width: 70%
+            > a
+                display: block
+                font-weight: 600
+                margin: -1em
+                overflow: hidden
+                padding: 1em
+                text-decoration: none
+                text-overflow: ellipsis
+                white-space: nowrap
 
     h1, h2, h3, h4, p, ul, ol, dl, blockquote, form, table, .input
         ~h1, ~h2, ~h3, ~h4, ~p, ~ul, ~ol, ~dl, ~blockquote, ~form, ~table

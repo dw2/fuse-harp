@@ -1,6 +1,54 @@
 {
     "globals": {
         "siteTitle": "Fuse, SPC",
-        "rootUrl": "http://fusespc.com"
+        "rootUrl": "http://fusespc.com",
+        "membershipPackages": [
+            {
+                "name": "Basic",
+                "price": "$50/mo",
+                "features": {
+                    "seating": false,
+                    "feature1": false,
+                    "feature2": false,
+                    "feature3": false
+                }
+            },{
+                "name": "Night Owl",
+                "price": "$95/mo",
+                "features": {
+                    "seating": "Open",
+                    "feature1": false,
+                    "feature2": true,
+                    "feature3": false
+                }
+            },{
+                "name": "Floatbro",
+                "price": "$150/mo",
+                "features": {
+                    "seating": "Open",
+                    "feature1": true,
+                    "feature2": true,
+                    "feature3": false
+                }
+            },{
+                "name": "Seriousbro",
+                "price": "$250/mo",
+                "features": {
+                    "seating": "Reserved",
+                    "feature1": true,
+                    "feature2": true,
+                    "feature3": true
+                }
+            },{
+                "name": "Office",
+                "price": "$300+/mo",
+                "features": {
+                    "seating": "Private",
+                    "feature1": true,
+                    "feature2": true,
+                    "feature3": true
+                }
+            }
+        ]
     }
 }

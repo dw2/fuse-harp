@@ -1,2 +1,58 @@
 section: .wrapper
   h1= pageTitle
+  p The prices listed below are for TESTING purposes ONLY.
+
+section.pricing: .wrapper
+  h2 Monthly Packages
+
+  table.wide
+    thead
+      tr
+        th
+        th Seating
+        th Feature
+        th Feature
+        th Feature
+        th Price
+    tbody
+      for package in membershipPackages
+        tr
+          th= package.name
+          td
+            if !!package.features.seating
+              = package.features.seating
+            else
+              mark.no No
+          td
+            if package.features.feature1
+              mark.yes Yes
+            else
+              mark.no No
+          td
+            if package.features.feature2
+              mark.yes Yes
+            else
+              mark.no No
+          td
+            if package.features.feature3
+              mark.yes Yes
+            else
+              mark.no No
+          th= package.price
+
+  table.narrow
+    tbody
+      for package in membershipPackages
+        tr
+          td.alignc
+            h3= package.name
+            mark.price= package.price
+            p.list
+              if !!package.features.seating
+                span #{package.features.seating} Seating
+              if !!package.features.feature1
+                span Feature 1
+              if !!package.features.feature2
+                span Feature 2
+              if !!package.features.feature3
+                span Feature 3

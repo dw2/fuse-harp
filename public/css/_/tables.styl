@@ -1,0 +1,86 @@
+table
+    margin: 1em auto
+    width: 100%
+
+    th
+        font-weight: 600
+
+    thead
+        th,
+        td
+            font-size: 1.2em
+            padding: .8em
+        th
+            color: #0e4e5c
+
+    tbody
+        th,
+        td
+            padding: 1em
+            ul,
+            ol
+                text-align: left
+        tr:nth-child(odd)
+            th,
+            td
+                background: #E4F5F8
+
+    tfoot
+        th,
+        td
+            padding: 1em
+
+    th,
+    td
+        &.alignl
+            text-align: left
+        &.alignr
+            text-align: right
+        &.alignc
+            text-align: center
+
+    p.list
+        font-size: .9em
+        margin: .5em 0
+        span ~ span:before
+            content: ', '
+
+    mark.price
+        color: #0e4e5c
+        display: block
+        font-size: 1.2em
+
+    mark.no,
+    mark.yes
+        border_radius(1em)
+        color: #fff
+        display: inline-block
+        height: 1.5em
+        margin: -.25em 0
+        overflow: hidden
+        position: relative
+        text-indent: -999em
+        vertical-align: middle
+        width: 1.5em
+        &:before
+            left: 0
+            line-height: 1.5em
+            position: absolute
+            right: 0
+            top: 0
+    mark.no
+        background: #C7D7DA
+        &:before
+            content: '\f00d'
+    mark.yes
+        background: #30C0E0
+        &:before
+            content: '\f00c'
+
+@media screen and (min-width: 800px)
+    section.pricing table.narrow
+        display: none
+
+@media screen and (max-width: 799px)
+    section.pricing table.wide
+        display: none
