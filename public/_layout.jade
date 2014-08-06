@@ -3,10 +3,26 @@ html
   head
     title #{!!pageTitle ? pageTitle + ' | ' : ''} #{siteTitle}
     meta(name='viewport', content='width=device-width, initial-scale=.9')
-    link(rel="stylesheet", href="/css/app.css")
+    link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Dosis:200,400,600')
+    link(rel='stylesheet', href='/css/app.css')
     link(rel='shortcut icon', href='/images/favicon.png', type='image/x-icon')
   body
-    .wrapper
-        header
-            img.logo(src='/images/logo-fuse.png', alt='Fuse')
-        != yield
+    header: .wrapper
+      a.branding(href='/')
+        img(src='/images/fuse-branding.png', alt='Fuse | Coworking, Tri-Cities, WA')
+      nav
+        a(href='/about') About
+        a(href='/membership') Membership
+        a(href='/directions') Directions
+        a(href='/contact') contact
+
+    article: .wrapper
+      != yield
+
+    footer: .wrapper
+      a.branding(href='/')
+        img(src='/images/fuse-branding-white.png', alt='Fuse | Coworking, Tri-Cities, WA')
+      p.legal
+        | &copy; Copyright #{new Date().getFullYear()} Fuse, SPC
+        a(href='/privacy') Privacy
+        a(href='/terms') Terms

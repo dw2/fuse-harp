@@ -1,5 +1,33 @@
 header
-    .logo
+    background: #fff
+    box_shadow(0 0 3em rgba(#000, .1))
+    height: 120px
+    position: relative
+    z-index: 3
+
+    .branding
         display: block
-        height: 57px
-        width: 93px
+        image_optimize()
+        left: 15px
+        position: absolute
+        top: 20px
+        img
+            display: block
+            height: 80px
+            width: 257px
+
+    nav
+        line-height: 60px
+        position: absolute
+        right: 0
+        top: 30px
+        a
+            color: #1bc0e3
+            display: inline-block
+            font-weight: 600
+            padding: 0 15px
+            text-transform: uppercase
+            vertical-align: center
+            &:hover,
+            &:focus
+                color: #0093b2
