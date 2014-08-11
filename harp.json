@@ -2,6 +2,21 @@
     "globals": {
         "siteTitle": "Fuse, SPC",
         "rootUrl": "http://fusespc.com",
+        "contact": {
+            "phone": "(555) 123-4567",
+            "email": "info@fusespc.com"
+        },
+        "location": {
+            "label": "Fuse Coworking Space",
+            "street": "710 George Washington Way",
+            "city": "Richland",
+            "state": "WA",
+            "zip": 99352,
+            "map": {
+                "shareURL": "https://a.tiles.mapbox.com/v4/fuse.j753mma4/page.html?access_token=pk.eyJ1IjoiZnVzZSIsImEiOiJMWVVpZlI4In0.sX7bLMpRfW4gbv-4b7dlgw#15/46.2745/-119.2753",
+                "embedURL": "https://a.tiles.mapbox.com/v4/fuse.j753mma4/attribution,zoompan,geocoder.html?access_token=pk.eyJ1IjoiZnVzZSIsImEiOiJMWVVpZlI4In0.sX7bLMpRfW4gbv-4b7dlgw"
+            }
+        },
         "membershipPackages": [
             {
                 "name": "Basic",
