@@ -5,49 +5,51 @@
         "membershipPackages": [
             {
                 "name": "Basic",
-                "price": "$50/mo",
+                "price": "$30/mo",
                 "features": {
                     "seating": false,
-                    "feature1": false,
-                    "feature2": false,
-                    "feature3": false
+                    "conferences": false,
+                    "events": true,
+                    "lockable": false
+                }
+            },{
+                "name": "Hot Desk",
+                "price": "$125/mo",
+                "features": {
+                    "seating": "Open",
+                    "conferences": 2,
+                    "events": true,
+                    "lockable": false
+                }
+            },{
+                "name": "Fixed Desk",
+                "price": "$225/mo",
+                "features": {
+                    "seating": "Reserved",
+                    "conferences": 3,
+                    "events": true,
+                    "lockable": true
                 }
             },{
                 "name": "Night Owl",
-                "price": "$95/mo",
+                "price": "$75/mo",
                 "features": {
                     "seating": "Open",
-                    "feature1": false,
-                    "feature2": true,
-                    "feature3": false
-                }
+                    "conferences": 1,
+                    "events": true,
+                    "lockable": false
+                },
+                "notes": "Access only during evenings and weekends."
             },{
-                "name": "Floatbro",
-                "price": "$150/mo",
-                "features": {
-                    "seating": "Open",
-                    "feature1": true,
-                    "feature2": true,
-                    "feature3": false
-                }
-            },{
-                "name": "Seriousbro",
-                "price": "$250/mo",
-                "features": {
-                    "seating": "Reserved",
-                    "feature1": true,
-                    "feature2": true,
-                    "feature3": true
-                }
-            },{
-                "name": "Office",
-                "price": "$300+/mo",
+                "name": "Offices",
+                "price": "$400+/mo",
                 "features": {
                     "seating": "Private",
-                    "feature1": true,
-                    "feature2": true,
-                    "feature3": true
-                }
+                    "conferences": 3,
+                    "events": true,
+                    "lockable": true
+                },
+                "notes": "Add $50/mo for each additional occupant for private offices."
             }
         ]
     }

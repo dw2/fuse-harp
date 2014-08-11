@@ -1,58 +1,78 @@
 section: .wrapper
   h1= pageTitle
-  p The prices listed below are for TESTING purposes ONLY.
+  p
+    | Our goal is to encourage and enrich one another. 
+    | While working together, ideas and methods will sometimes clash. 
+    | We view these differences as natural and a source of creative exchange. 
+    | If you need help finding a common understanding, 
+    | we will endeavor to listen and communicate with wisdom and kindness. 
+    | By using our body and speech to support the values we deeply believe in 
+    | (generosity, kindness, ethical conduct, creativity, and compassion) 
+    | we will create great community.
 
 section.pricing: .wrapper
-  h2 Monthly Packages
+  h1 Monthly Packages
 
   table.wide
     thead
       tr
         th
         th Seating
-        th Feature
-        th Feature
-        th Feature
-        th Price
+        th Event Access
+        th Conference<br>Room Use
+        th Locked<br>Desk/Room
+        th.alignr Price
     tbody
-      for package in membershipPackages
-        tr
-          th= package.name
+      each package, p in membershipPackages
+        - className = p % 2 ? 'even' : 'odd'
+        tr(class=className)
+          th.alignl= package.name
           td
             if !!package.features.seating
               = package.features.seating
             else
               mark.no No
           td
-            if package.features.feature1
+            if package.features.events
               mark.yes Yes
             else
               mark.no No
           td
-            if package.features.feature2
+            if package.features.conferences
               mark.yes Yes
             else
               mark.no No
           td
-            if package.features.feature3
+            if package.features.lockable
               mark.yes Yes
             else
               mark.no No
-          th= package.price
+          th.alignr= package.price
+        if !!package.notes
+          tr(class=className)
+            td(colspan=6)
+              p.notes= package.notes
 
   table.narrow
     tbody
-      for package in membershipPackages
-        tr
+      each package, p in membershipPackages
+        - className = p % 2 ? 'even' : 'odd'
+        tr(class=className)
           td.alignc
             h3= package.name
             mark.price= package.price
             p.list
               if !!package.features.seating
                 span #{package.features.seating} Seating
-              if !!package.features.feature1
-                span Feature 1
-              if !!package.features.feature2
-                span Feature 2
-              if !!package.features.feature3
-                span Feature 3
+              if !!package.features.events
+                span Access to events
+              if package.features.conferences > 0
+                span
+                  br
+                  = package.features.conferences
+                  |  two-hour conference room meeting
+                  = package.features.conferences == 1 ? '' : 's'
+              if !!package.features.lockable
+                span Locked Desk/Room
+            if !!package.notes
+              p.notes= package.notes

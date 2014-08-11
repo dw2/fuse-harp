@@ -10,6 +10,7 @@ table
         td
             font-size: 1.2em
             padding: .8em
+            vertical-align: middle
         th
             color: #0e4e5c
 
@@ -20,10 +21,21 @@ table
             ul,
             ol
                 text-align: left
-        tr:nth-child(odd)
+        th
+            white-space: nowrap
+        tr.odd
             th,
             td
                 background: #E4F5F8
+        tr.even
+            th,
+            td
+                background: #fff
+        tr.odd + tr.odd,
+        tr.even + tr.even
+            th,
+            td
+                padding-top: 0
 
     tfoot
         th,
@@ -41,9 +53,15 @@ table
 
     p.list
         font-size: .9em
-        margin: .5em 0
+        line-height: 1.2em
+        margin: .75em 0 0
         span ~ span:before
             content: ', '
+
+    p.notes
+        color: #839a9e
+        font-size: .9em
+        margin: 0
 
     mark.price
         color: #0e4e5c
@@ -52,30 +70,41 @@ table
 
     mark.no,
     mark.yes
-        border_radius(1em)
         color: #fff
         display: inline-block
         height: 1.5em
         margin: -.25em 0
-        overflow: hidden
         position: relative
         text-indent: -999em
         vertical-align: middle
         width: 1.5em
         &:before
+            border_radius(1em)
             left: 0
             line-height: 1.5em
             position: absolute
             right: 0
             top: 0
-    mark.no
+            z-index: 2
+        &[data-hint]:after
+            border_radius(1em)
+            color: #17849c
+            content: attr(data-hint)
+            font-size: .7em
+            font-weight: 600
+            left: 100%
+            line-height: 1em
+            min-width: 1em
+            position: absolute
+            top: 0
+            white-space: nowrap
+            z-index: 1
+    mark.no:before
         background: #C7D7DA
-        &:before
-            content: '\f00d'
-    mark.yes
+        content: '\f00d'
+    mark.yes:before
         background: #30C0E0
-        &:before
-            content: '\f00c'
+        content: '\f00c'
 
 @media screen and (min-width: 800px)
     section.pricing table.narrow
