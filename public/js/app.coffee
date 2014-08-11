@@ -1,6 +1,6 @@
 jQuery(document).ready ($) ->
     $body = $('body')
-    $.touchEnabled = typeof(ontouchstart) !== 'undefined';
+    $.touchEnabled = typeof(ontouchstart) isnt 'undefined';
 
     # Dropdown header menu
     $menu = $('body > header nav')
@@ -14,10 +14,10 @@ jQuery(document).ready ($) ->
 
     # Parallax sections
     $parallaxes = $('section[role=parallax]')
-    if $.touchEnabled
-        $parallaxes.css backgroundPosition: '50% 50%'
-    else
-        if $parallaxes.length > 0
+    if $parallaxes.length > 0
+        if $.touchEnabled
+            $parallaxes.css backgroundPosition: '50% 50%'
+        else
             doParallaxes = ->
                 scrolled = $(window).scrollTop()
                 $parallaxes.each ->
