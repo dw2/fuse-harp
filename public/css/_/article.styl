@@ -5,6 +5,9 @@ article
 section
     padding: 3em 20px
 
+    .wrapper
+        text-align: left
+
     a
         color: #30C0E0
         text-decoration: underline
@@ -13,23 +16,25 @@ section
         color: #0e4e5c
         line-height: 1em
     h1
-        font-size: 3em
+        font-size: 3.2em
         font-weight: 200
     h2
-        font-size: 2em
+        font-size: 2.4em
         font-weight: 200
     h3
-        font-size: 1.5em
+        font-size: 1.3em
         font-weight: 600
     h4
         font-weight: 600
 
     p
         line-height: 1.4em
-        text-align: left
+
+    blockquote
+        background: #E4F5F8
+        padding: 2em
 
     ul, ol
-        text-align: left
         li
             margin-left: 2em
     ul > li
@@ -66,6 +71,20 @@ section
                 text-overflow: ellipsis
                 white-space: nowrap
 
-    h1, h2, h3, h4, p, ul, ol, dl, blockquote, form, table, .input
-        ~h1, ~h2, ~h3, ~h4, ~p, ~ul, ~ol, ~dl, ~blockquote, ~form, ~table
+    h1, h2, h3, h4, p, ul, ol, dl, blockquote, form, table, .input, .block
+        ~h1, ~h2, ~h3, ~h4, ~p, ~ul, ~ol, ~dl, ~blockquote, ~form, ~table, ~.block
             margin-top: 2em
+
+@media screen and (min-width: 800px)
+    .twocol
+        &:after
+            clear_fix()
+        .col1,
+        .col2
+            box_sizing(border-box)
+            margin-top: 0
+            width: 48%
+        .col1
+            float: left
+        .col2
+            float: right
