@@ -6,7 +6,57 @@
         "pageTitle": "About"
     },
     "membership": {
-        "pageTitle": "Membership"
+        "pageTitle": "Membership",
+        "membershipPackages": [
+            {
+                "name": "Basic",
+                "price": "$30/mo",
+                "features": {
+                    "seating": false,
+                    "conferences": false,
+                    "events": true,
+                    "lockable": false
+                }
+            },{
+                "name": "Hot Desk",
+                "price": "$125/mo",
+                "features": {
+                    "seating": "Open",
+                    "conferences": 2,
+                    "events": true,
+                    "lockable": false
+                }
+            },{
+                "name": "Fixed Desk",
+                "price": "$225/mo",
+                "features": {
+                    "seating": "Reserved",
+                    "conferences": 3,
+                    "events": true,
+                    "lockable": true
+                }
+            },{
+                "name": "Night Owl",
+                "price": "$75/mo",
+                "features": {
+                    "seating": "Open",
+                    "conferences": 1,
+                    "events": true,
+                    "lockable": false
+                },
+                "notes": "Access only during evenings and weekends."
+            },{
+                "name": "Offices",
+                "price": "$400+/mo",
+                "features": {
+                    "seating": "Private",
+                    "conferences": 3,
+                    "events": true,
+                    "lockable": true
+                },
+                "notes": "Add $50/mo for each additional occupant for private offices."
+            }
+        ]
     },
     "contact": {
         "pageTitle": "Contact & Directions"

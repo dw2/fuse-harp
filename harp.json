@@ -16,56 +16,6 @@
                 "shareURL": "https://a.tiles.mapbox.com/v4/fuse.j753mma4/page.html?access_token=pk.eyJ1IjoiZnVzZSIsImEiOiJMWVVpZlI4In0.sX7bLMpRfW4gbv-4b7dlgw#15/46.2745/-119.2753",
                 "embedURL": "https://a.tiles.mapbox.com/v4/fuse.j753mma4/attribution,zoompan,geocoder.html?access_token=pk.eyJ1IjoiZnVzZSIsImEiOiJMWVVpZlI4In0.sX7bLMpRfW4gbv-4b7dlgw"
             }
-        },
-        "membershipPackages": [
-            {
-                "name": "Basic",
-                "price": "$30/mo",
-                "features": {
-                    "seating": false,
-                    "conferences": false,
-                    "events": true,
-                    "lockable": false
-                }
-            },{
-                "name": "Hot Desk",
-                "price": "$125/mo",
-                "features": {
-                    "seating": "Open",
-                    "conferences": 2,
-                    "events": true,
-                    "lockable": false
-                }
-            },{
-                "name": "Fixed Desk",
-                "price": "$225/mo",
-                "features": {
-                    "seating": "Reserved",
-                    "conferences": 3,
-                    "events": true,
-                    "lockable": true
-                }
-            },{
-                "name": "Night Owl",
-                "price": "$75/mo",
-                "features": {
-                    "seating": "Open",
-                    "conferences": 1,
-                    "events": true,
-                    "lockable": false
-                },
-                "notes": "Access only during evenings and weekends."
-            },{
-                "name": "Offices",
-                "price": "$400+/mo",
-                "features": {
-                    "seating": "Private",
-                    "conferences": 3,
-                    "events": true,
-                    "lockable": true
-                },
-                "notes": "Add $50/mo for each additional occupant for private offices."
-            }
-        ]
+        }
     }
 }
