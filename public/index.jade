@@ -6,15 +6,18 @@ section.hero.home01(role='parallax'): .wrapper
     a.btn(href='/coworking') What is coworking?
     a.btn(href='/fit') Is this for me?
 
-section.stories: .wrapper
-  for i in [0,1,2,3]
-    if story = stories[i]
-      .story
+section.stories.limited
+  for s in [0,1,2,3]
+    if story = stories[s]
+      .story(class='story' + (s + 1))
         cite= story.label
+        img(src='/images/stories/' + story.uri + '.jpg', alt='')
         .about
           dfn= story.title
           q= story.quote
-        a.more(href="/stories/" + story.uri) Read
+        a.more(href='/stories/' + story.uri) Read this<br>Story
+  hr
+  p: a.btn.icon.next.round.secondary(href='/stories') All Stories
 
 section.hero.home02: .wrapper
   h1

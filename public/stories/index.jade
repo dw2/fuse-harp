@@ -1,2 +1,12 @@
 section: .wrapper
   h1= pageTitle
+
+section.stories: .wrapper
+  for story, s in stories
+    .story(class='story' + (s + 1))
+      cite= story.label
+      img(src='/images/stories/' + story.uri + '.jpg', alt='')
+      .about
+        dfn= story.title
+        q= story.quote
+      a.more(href='/stories/' + story.uri) Read this<br>Story

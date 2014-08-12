@@ -7,16 +7,36 @@ input[type="submit"]
     color: #0e4e5c
     display: inline-block
     font-size: 1.2em
-    line-height: 50px
+    line-height: 2.25em
     padding: 0 1.5em
     position: relative
     select(none)
     text-align: center
     text-decoration: none
 
+    &.icon:after
+        margin-left: .5em
+    &.icon.love:after
+        content: '\f08a'
+    &.icon.menu:after
+        content: '\f0c9'
+    &.icon.next:after
+        content: '\f101'
+    &.icon.prev:after
+        content: '\f100'
+
+    &.round
+        border_radius(2em)
+
     &:hover,
     &:focus
         background: #ffef95
+
+    &.secondary
+        background: #c1d7db
+        &:hover,
+        &:focus
+            background: #CDDFE2
 
     + .btn,
     + button,
