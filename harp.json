@@ -16,6 +16,27 @@
                 "shareURL": "https://a.tiles.mapbox.com/v4/fuse.j753mma4/page.html?access_token=pk.eyJ1IjoiZnVzZSIsImEiOiJMWVVpZlI4In0.sX7bLMpRfW4gbv-4b7dlgw#15/46.2745/-119.2753",
                 "embedURL": "https://a.tiles.mapbox.com/v4/fuse.j753mma4/attribution,zoompan,geocoder.html?access_token=pk.eyJ1IjoiZnVzZSIsImEiOiJMWVVpZlI4In0.sX7bLMpRfW4gbv-4b7dlgw"
             }
-        }
+        },
+        "stories": [
+            {
+                "name": "Jay Smith",
+                "uri": "jay",
+                "label": "Jay's Story",
+                "title": "Freelance Web Developer",
+                "quote": "Lorem ipsum dolor sit amet consect elise pur anum"
+            },{
+                "name": "Kay Brown",
+                "uri": "kay",
+                "label": "Kay's Story",
+                "title": "Educator & Telecommuter",
+                "quote": "Lorem ipsum dolor sit amet consect elise pur anum"
+            },{
+                "name": "Elle Jones",
+                "uri": "elle",
+                "label": "Elle's Story",
+                "title": "Startup Entrepreneur",
+                "quote": "Lorem ipsum dolor sit amet consect elise pur anum"
+            }
+        ]
     }
 }

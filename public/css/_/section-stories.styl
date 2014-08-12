@@ -1,0 +1,74 @@
+section.stories
+    font-size: 0
+    overflow: hidden
+    padding: 60px 20px
+    white-space: nowrap
+    .wrapper
+        text-align: center
+
+    .story
+        display: inline-block
+        font-size: 20px
+        text-align: center
+        vertical-align: top
+        white-space: normal
+        width: 300px
+        cite
+            color: #1bc0e3
+            display: block
+            font-size: 2em
+            margin-bottom: .5em
+            text-transform: uppercase
+        .about
+            background: #0e4e5c
+            border_radius(150px)
+            color: #fff
+            height: 200px
+            padding: 50px
+            width: 200px
+            dfn
+                color: #1bc0e3
+                display: block
+                font-size: 1.5em
+                line-height: 1em
+            q
+                display: block
+                font-size: 1.2em
+                line-height: 1em
+                margin-top: 1em
+                &:before,
+                &:after
+                    display: inline-block
+                    font-size: .5em
+                    margin: -.25em .5em 0
+                    vertical-align: top
+                &:before
+                    content: '\f10d'
+                &:after
+                    content: '\f10e'
+        .more
+            background: #ffe556
+            border_radius(50px)
+            color: #0e4e5c
+            display: block
+            height: 100px
+            line-height: 70px
+            margin: -50px auto 0
+            position: relative
+            text-decoration: none
+            transition(line-height .2s linear)
+            width: 100px
+            &:after
+                bottom: 0
+                content: '\f103'
+                font-size: 1.8em
+                left: 0
+                position: absolute
+                right: 0
+            &:hover,
+            &:focus
+                background: #FFEF95
+                line-height: 64px
+
+    .story ~ .story
+        margin-left: 60px

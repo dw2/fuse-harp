@@ -6,9 +6,15 @@ section.hero.home01(role='parallax'): .wrapper
     a.btn(href='/coworking') What is coworking?
     a.btn(href='/fit') Is this for me?
 
-section: .wrapper
-  h1 Hello World!
-  p Fuse is coming soon...
+section.stories: .wrapper
+  for i in [0,1,2,3]
+    if story = stories[i]
+      .story
+        cite= story.label
+        .about
+          dfn= story.title
+          q= story.quote
+        a.more(href="/stories/" + story.uri) Read
 
 section.hero.home02: .wrapper
   h1
