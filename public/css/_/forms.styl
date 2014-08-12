@@ -3,10 +3,12 @@ button,
 input[type="button"],
 input[type="submit"]
     background: #FFE35F
+    box_sizing(border-box)
     box_shadow(0 1px 1px rgba(#0e4e5c,.5))
     color: #0e4e5c
     display: inline-block
     font-size: 1.2em
+    height: 2.25em
     line-height: 2.25em
     padding: 0 1.5em
     position: relative
@@ -14,19 +16,37 @@ input[type="submit"]
     text-align: center
     text-decoration: none
 
-    &.icon:after
+    &.iconl:before
+        margin-right: .5em
+    &.iconr:after
         margin-left: .5em
-    &.icon.love:after
+    &.iconl.edit:before,
+    &.iconr.edit:after
+        content: '\f040'
+    &.iconl.envelope:before,
+    &.iconr.envelope:after
+        content: '\f003'
+    &.iconl.love:before,
+    &.iconr.love:after
         content: '\f08a'
-    &.icon.menu:after
+    &.iconl.menu:before,
+    &.iconr.menu:after
         content: '\f0c9'
-    &.icon.next:after
+    &.iconl.next:before,
+    &.iconr.next:after
         content: '\f101'
-    &.icon.prev:after
+    &.iconl.prev:before,
+    &.iconr.prev:after
         content: '\f100'
+    &.iconl.subscribe:before,
+    &.iconr.subscribe:after
+        content: '\f0c6'
 
     &.round
         border_radius(2em)
+
+    &.small
+        font-size: .9em
 
     &:hover,
     &:focus
@@ -43,3 +63,19 @@ input[type="submit"]
     + input[type="button"],
     + input[type="submit"]
         margin-left: .5em
+
+section form
+    
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="url"],
+    textarea
+        background: #eee
+        box_shadow(0 1px 1px rgba(#0e4e5c,.5))
+        box_sizing(border-box)
+        display: inline-block
+        font-size: 1.2em
+        height: 2.25em
+        line-height: 1.25em
+        padding: .5em 1em
