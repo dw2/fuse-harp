@@ -19,12 +19,7 @@ section.stories.limited
   hr
   p: a.btn.iconr.next.round.secondary.small(href='/stories') All Stories
 
-section.mailchimp
-  h2 Get Fuse updates and event notifications
-  form(method='post', action='')
-    input(type='text', name='FNAME', placeholder='Name')
-    input(type='email', name='EMAIL', placeholder='Email')
-    button.secondary.iconr.envelope Subscribe
+!= partial('_sections/mailchimp')
 
 section.hero.home02: .wrapper
   h1
