@@ -27,6 +27,10 @@ section
     h4
         font-weight: 600
 
+    hr
+        margin: 2em 0
+        border-top: 1px double #eee
+
     p
         line-height: 1.4em
 
@@ -75,6 +79,33 @@ section
         ~h1, ~h2, ~h3, ~h4, ~p, ~ul, ~ol, ~dl, ~blockquote, ~form, ~table, ~.block
             margin-top: 1.75em
 
+@media screen and (min-width: 1000px)
+    .fourcol
+        .col1,
+        .col2,
+        .col3,
+        .col4
+            margin-top: 0 !important
+            width: 23.5%
+        .col2,
+        .col3,
+        .col4
+            margin-left: 2%
+
+@media screen and (min-width: 800px) and (max-width: 999px)
+    .fourcol
+        .col1,
+        .col2,
+        .col3,
+        .col4
+            width: 48%
+        .col1,
+        .col3
+            clear: left
+        .col2,
+        .col4
+            margin-left: 4%
+
 @media screen and (min-width: 800px)
     .twocol
         &:after
@@ -88,3 +119,15 @@ section
             float: left
         .col2
             float: right
+    .fourcol
+        &:after
+            clear_fix()
+        .col1,
+        .col2,
+        .col3,
+        .col4
+            box_sizing(border-box)
+            float: left
+        .col1,
+        .col2
+            margin-top: 0 !important
