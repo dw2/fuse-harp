@@ -1,6 +1,6 @@
 jQuery(document).ready ($) ->
     $body = $('body')
-    $.touchEnabled = typeof(ontouchstart) isnt 'undefined';
+    $.touchEnabled = typeof(ontouchstart) isnt 'undefined'
 
     # Dropdown header menu
     $menu = $('body > header nav')

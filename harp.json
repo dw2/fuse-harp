@@ -19,22 +19,22 @@
         },
         "stories": [
             {
-                "name": "Jay Smith",
-                "uri": "jay",
-                "label": "Jay's Story",
-                "title": "Freelance Web Developer",
-                "quote": "Lorem ipsum dolor sit amet consect elise pur anum"
+                "name": "Erik Ralson",
+                "uri": "erik",
+                "label": "Erik's Story",
+                "title": "Web & Mobile Developer",
+                "quote": "Coworking is about making a dynamo of serendipity."
             },{
-                "name": "Kaye Brown",
-                "uri": "kaye",
-                "label": "Kaye's Story",
+                "name": "Becca Lingley",
+                "uri": "becca",
+                "label": "Becca's Story",
                 "title": "Educator & Telecommuter",
-                "quote": "Lorem ipsum dolor sit amet consect elise pur anum"
+                "quote": "Fuse provides a place and framework for community."
             },{
                 "name": "Elle Jones",
                 "uri": "elle",
                 "label": "Elle's Story",
-                "title": "Startup Entrepreneur",
+                "title": "Lorem Ipsumsauce FTW",
                 "quote": "Lorem ipsum dolor sit amet consect elise pur anum"
             }
         ]
