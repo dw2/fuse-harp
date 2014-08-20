@@ -22,7 +22,7 @@
                 "price": "$125/mo",
                 "features": {
                     "seating": "Open",
-                    "conferences": 2,
+                    "conferences": false,
                     "events": true,
                     "lockable": false
                 }
