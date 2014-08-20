@@ -22,7 +22,7 @@
                 "price": "$125/mo",
                 "features": {
                     "seating": "Open",
-                    "conferences": false,
+                    "conferences": 3,
                     "events": true,
                     "lockable": false
                 }
@@ -31,30 +31,30 @@
                 "price": "$225/mo",
                 "features": {
                     "seating": "Reserved",
-                    "conferences": 3,
+                    "conferences": 6,
                     "events": true,
                     "lockable": true
                 }
-            },{
-                "name": "Night Owl",
-                "price": "$75/mo",
-                "features": {
-                    "seating": "Open",
-                    "conferences": 1,
-                    "events": true,
-                    "lockable": false
-                },
-                "notes": "Access only during evenings and weekends."
             },{
                 "name": "Offices",
                 "price": "$400+/mo",
                 "features": {
                     "seating": "Private",
-                    "conferences": 3,
+                    "conferences": 10,
                     "events": true,
                     "lockable": true
                 },
                 "notes": "Add $50/mo for each additional occupant for private offices."
+            },{
+                "name": "Night Owl",
+                "price": "$75/mo",
+                "features": {
+                    "seating": "Open",
+                    "conferences": "Off-Hours",
+                    "events": true,
+                    "lockable": false
+                },
+                "notes": "Access only during evenings and weekends."
             }
         ]
     },

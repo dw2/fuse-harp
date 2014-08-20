@@ -42,10 +42,15 @@ section.pricing: .wrapper
             else
               mark.no No
           td
-            if package.features.conferences
+            if typeof(package.features.conferences) == 'number'
               mark.yes Yes
+            else if typeof(package.features.conferences) == 'boolean'
+              if package.features.conferences
+                mark.yes Yes
+              else
+                mark.no No
             else
-              mark.no No
+              = package.features.conferences
           td
             if package.features.lockable
               mark.yes Yes
@@ -74,7 +79,7 @@ section.pricing: .wrapper
                 span
                   br
                   = package.features.conferences
-                  |  two-hour conference room meeting
+                  |  one-hour conference room credit
                   = package.features.conferences == 1 ? '' : 's'
               if !!package.features.lockable
                 span Locked Desk/Room
