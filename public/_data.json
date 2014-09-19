@@ -46,7 +46,7 @@
                 },
                 "notes": "Add $125/mo for each additional occupant for private offices."
             },{
-                "name": "Night Owl",
+                "name": "Part Timer",
                 "price": "$75/mo",
                 "features": {
                     "seating": "Open",
@@ -54,7 +54,7 @@
                     "events": true,
                     "lockable": false
                 },
-                "notes": "Access only during evenings and weekends."
+                "notes": "Access granted 10 days/mo."
             }
         ]
     },
