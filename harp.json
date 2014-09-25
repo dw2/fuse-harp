@@ -36,6 +36,12 @@
                 "label": "Tanya's Story",
                 "title": "Budding Entrepreneur",
                 "quote": "These are the folks I love to work with."
+            },{
+                "name": "Doug Waltman",
+                "uri": "doug",
+                "label": "Doug's Story",
+                "title": "Freelancer & Entrepreneur",
+                "quote": "Cowokring isn't about work; it's about people."
             }
         ]
     }

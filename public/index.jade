@@ -7,15 +7,15 @@ section.hero.home01(role='parallax'): .wrapper
     a.btn(href='/membership') Is this for me?
 
 section.stories.limited
-  for s in [0,1,2,3,5,6,7,8,9].sort(function() { return .5 - Math.random(); })
-    if story = stories[s]
-      .story(class='story' + (s + 1))
-        cite= story.label
-        img(src='/images/stories/' + story.uri + '.jpg', alt='')
-        .about
-          dfn= story.title
-          q= story.quote
-        a.more(href='/stories/' + story.uri) Read this<br>Story
+  for s in [1,1,1]
+    - story = stories.splice(Math.floor(Math.random() * stories.length), 1)[0]
+    .story(class='story' + (s + 1))
+      cite= story.label
+      img(src='/images/stories/' + story.uri + '.jpg', alt='')
+      .about
+        dfn= story.title
+        q= story.quote
+      a.more(href='/stories/' + story.uri) Read this<br>Story
   hr
   p: a.btn.iconr.next.round.secondary.small(href='/stories') All Stories
 
