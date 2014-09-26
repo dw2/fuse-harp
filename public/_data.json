@@ -58,6 +58,9 @@
             }
         ]
     },
+    "board": {
+        "pageTitle": "Board of Directors"
+    },
     "contact": {
         "pageTitle": "Contact & Directions"
     },

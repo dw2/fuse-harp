@@ -2,16 +2,19 @@
     "index": {
         "pageTitle": "Tri-Cities' Coworking Stories"
     },
-    "erik": {
-        "pageTitle": "Erik Ralston's Coworking Story"
-    },
     "becca": {
         "pageTitle": "Becca Lingley's Coworking Story"
     },
-    "tanya": {
-        "pageTitle": "Tanya Lasuk's Coworking Story"
+    "erik": {
+        "pageTitle": "Erik Ralston's Coworking Story"
+    },
+    "brett": {
+        "pageTitle": "Brett Spooner's Coworking Story"
     },
     "doug": {
         "pageTitle": "Doug Waltman's Coworking Story"
+    },
+    "tanya": {
+        "pageTitle": "Tanya Lasuk's Coworking Story"
     }
 }

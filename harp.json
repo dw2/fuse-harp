@@ -19,29 +19,35 @@
         },
         "stories": [
             {
-                "name": "Erik Ralson",
-                "uri": "erik",
-                "label": "Erik's Story",
-                "title": "Web & Mobile Developer",
-                "quote": "Coworking is about making a dynamo of serendipity."
-            },{
                 "name": "Becca Lingley",
                 "uri": "becca",
                 "label": "Becca's Story",
                 "title": "Educator & Telecommuter",
                 "quote": "Fuse provides a place and framework for community."
             },{
-                "name": "Tanya Lasuk",
-                "uri": "tanya",
-                "label": "Tanya's Story",
-                "title": "Budding Entrepreneur",
-                "quote": "These are the folks I love to work with."
+                "name": "Erik Ralson",
+                "uri": "erik",
+                "label": "Erik's Story",
+                "title": "Web & Mobile Developer",
+                "quote": "Coworking is about making a dynamo of serendipity."
+            },{
+                "name": "Brett Spooner",
+                "uri": "brett",
+                "label": "Brett's Story",
+                "title": "Entrepre-lawyer",
+                "quote": "My dream is of a unified Tri-Cities."
             },{
                 "name": "Doug Waltman",
                 "uri": "doug",
                 "label": "Doug's Story",
                 "title": "Freelancer & Entrepreneur",
                 "quote": "Cowokring isn't about work; it's about people."
+            },{
+                "name": "Tanya Lasuk",
+                "uri": "tanya",
+                "label": "Tanya's Story",
+                "title": "Budding Entrepreneur",
+                "quote": "These are the folks I love to work with."
             }
         ]
     }
