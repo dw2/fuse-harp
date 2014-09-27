@@ -1,6 +1,7 @@
 {
     "globals": {
         "siteTitle": "Fuse, SPC",
+        "siteDescription": "A Tri-Cities coworking community where productivity goes hand in hand with a passion for people and the growth of ideas.",
         "rootUrl": "http://www.fusespc.com",
         "contact": {
             "phone": "(555) 123-4567",
