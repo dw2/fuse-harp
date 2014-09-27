@@ -7,7 +7,7 @@ html
 
     meta(property="article:publisher", content="http://www.fusespc.com")
     meta(property="og:type", content="article")
-    meta(property="og:url", content=rootUrl + '/' + current.path.join('/'))
+    meta(property="og:url", content=rootUrl + '/' + (current.path == 'index' ? '' : current.path.join('/')))
     meta(property="og:title", content=!!pageTitle ? pageTitle : siteTitle)
     meta(property="og:image", content=rootUrl + '/images/fuse-avatar-v3.jpg')
 
