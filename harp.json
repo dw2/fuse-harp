@@ -1,7 +1,7 @@
 {
     "globals": {
         "siteTitle": "Fuse, SPC",
-        "rootUrl": "http://fusespc.com",
+        "rootUrl": "http://www.fusespc.com",
         "contact": {
             "phone": "(555) 123-4567",
             "email": "info@fusespc.com"
