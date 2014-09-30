@@ -3,8 +3,8 @@ section: .wrapper
   dl
     dt Email
     dd: a(href="mailto:" + contact.email)= contact.email
-    //- dt Call
-    //- dd= contact.phone
+    dt Call
+    dd= contact.phone
     dt Location
     dd
       a(target="_blank", href=location.map.shareURL)= location.label
